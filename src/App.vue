@@ -4,82 +4,110 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+<header>
+      <h1>AvtoKat<span>UZ</span></h1>
+      <div class="switch long">
+        <label>
+          <span>Страна:</span>
+          <select>
+            <option>Узбекистан</option>
+            <option>Россия</option>
+          </select>
+        </label>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      </div>
+      <div class="switch">
+        <label>
+          <span>Язык:</span>
+          <select>
+            <option>Узбекский</option>
+            <option>Русский</option>
+          </select>
+        </label>
+      </div>
+      <div>
+        <a href="#">Регистрация/вход</a>
+      </div>
+    </header>
+    <main>
+      <section id="buy">
+        <div class="black-box">
+          <h3>Найдите нужное авто</h3>
+          <h2>КУПИТЬ</h2>
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
+          <div class="content-line">
+            <p>Если вы знаете код <br />нужного автомобиля, <br />введите его в поле</p>
+            <h4>AKHD</h4>
+            <input type="text" class="long" placeholder="Введите код формата ABCD1234" />
+            <button>Найти</button>
+          </div>
 
-  <RouterView />
+        </div>
+      </section>
+      <section id="sell">
+        <div class="black-box">
+          <h3>Оцифруйте свое авто</h3>
+          <h2>ПРОДАТЬ</h2>
+          <div class="content-line">
+            <p>Оцифруйте свой автомобиль, <br />загрузи его в наш каталог <br />распечатай удобный стикер <br />с
+              QR-кодом на авто</p>
+            <ul class="long">
+              <li>Цена контакты и QR-код</li>
+              <li>Ссылка и фото для покупателей</li>
+              <li>Описание по 400+ параметрам</li>
+              <li>Возможность сравнения</li>
+            </ul>
+            <button class="button-border">Будет вот так</button>
+            <button class="long-button">Заявка в телеграмм </button>
+          </div>
+        </div>
+      </section>
+      <section id="dill">
+        <div class="black-box">
+          <h3>Улучшите процесс продаж</h3>
+          <h2>ДИЛЕРАМ</h2>
+          <div class="content-line">
+            <p>Оцифруйте свой автомобиль, <br />загрузи его в наш каталог <br />распечатай удобный стикер <br />с
+              QR-кодом на авто</p>
+            <ul class="long">
+              <li>15+ лет на рынке</li>
+              <li>20+ брендов <br />являются нашими партнерами</li>
+            </ul>
+            <button class="button-border">О нас</button>
+            <button class="long-button">Заявка в телеграмм </button>
+          </div>
+        </div>
+      </section>
+      <!-- <section id="debug">
+        <div class="black-box">
+          <h3>Шрифтовое решение</h3>
+          <h2>Техническая секция</h2>
+          <p class="mr">Продать/Купить MartianMono-Regular</p>
+          <p class="mb">Продать/Купить MartianMono-Bold</p>
+          <p class="mcr">Продать/Купить MartianMono_Condensed-Regular</p>
+          <p class="mcl">Продать/Купить MartianMono_Condensed-Light</p>
+          <p class="mcb">Продать/Купить MartianMono_Condensed-Bold</p>
+        </div>
+      </section> -->
+    </main>
+    <footer>
+      <div class="long">
+        <a href="#">О нас</a>
+        <p>&nbsp;</p>
+        <p>2023, AvtoCat</p>
+        <p>All Rigths reserved</p>
+      </div>
+      <div>
+        <a href="#" style="margin-bottom: 10px;"><img src="AutoCatAE_logo_white_x200.png" width="150"/></a>
+        <a href="#"><img src="AvtoKatKZ_logo_white_x200.png" width="150"/></a>
+      </div>
+  
+        <a href="#" style="margin-left: 50px;"><img src="AvtoKatUZ_logo_white_x200.png" style="width: 200px;"/></a>
+  
+      
+    </footer>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
 </style>
