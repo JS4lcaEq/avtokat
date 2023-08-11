@@ -225,3 +225,12 @@ footer a {
   /* margin-bottom: 10px; */
 }
 
+.ae {
+  background-image: url(./AutoCatAE_logo_white_x200.png);
+  background-size: 150px;
+  width: 150px;
+  height: 35px;
+  display: block;
+  /* border: 1px solid #ccc; */
+}
+
