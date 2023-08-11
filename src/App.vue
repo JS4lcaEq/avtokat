@@ -1,6 +1,9 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import './assets/AutoCatAE_logo_white_x200.png'
+import './assets/AvtoKatKZ_logo_white_x200.png'
+import './assets/AvtoKatUZ_logo_white_x200.png'
 </script>
 
 <template>
