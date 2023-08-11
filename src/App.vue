@@ -101,11 +101,11 @@ import './assets/AvtoKatUZ_logo_white_x200.png'
         <p>All Rigths reserved</p>
       </div>
       <div>
-        <a href="#" style="margin-bottom: 10px;" class="ae"></a>
-        <a href="#"><img src="./assets/AvtoKatKZ_logo_white_x200.png" width="150"/></a>
+        <!-- <a href="#" style="margin-bottom: 10px;" class="ae"></a> -->
+        <!-- <a href="#"><img src="./assets/AvtoKatKZ_logo_white_x200.png" width="150"/></a> -->
       </div>
   
-        <a href="#" style="margin-left: 50px;"><img src="./assets/AvtoKatUZ_logo_white_x200.png" style="width: 200px;"/></a>
+        <!-- <a href="#" style="margin-left: 50px;"><img src="./assets/AvtoKatUZ_logo_white_x200.png" style="width: 200px;"/></a> -->
   
       
     </footer>
